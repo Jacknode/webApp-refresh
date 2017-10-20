@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="description" content="">
+	<meta name="referrer" content="never">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0
+		}
+
+		#wrap {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			width: 100%;
+			overflow: hidden;
+			background: #282828;
+		}
+
+		#Home {
+			position: relative;
+			background: #fff;
+		}
+
+		li {
+			padding-left: 10px;
+			border-top: 1px solid #333;
+			border-bottom: 1px solid #333;
+			height: 30px;
+			line-height: 30px;
+		}
+
+		li:nth-of-type(1) {
+			border-top: none;
+		}
+	</style>
+
+</head>
+
+<body>
+	<div id="app" style="height: 100vh">
+		<div id="wrap">
+			<div id="Home">
+				<div id="load">
+					<span class="loadImg"></span>
+					<span class="loadImg2"></span>
+					<span class="loadText">下拉刷新</span>
+				</div>
+				<!-- 滑动区域 -->
+				<ul id="list">
+				</ul>
+
+				<div id="footerLoad">
+					<span class="footLoadImg"></span>
+					<span class="footLoadImg2"></span>
+					<span class="footLoadText">加载更多</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/m.touch.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+
+</html>
